@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Login Hotspot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <main class="container" role="main" aria-labelledby="title">
+        <section class="promo" aria-hidden="false">
+            <h1 id="title">Selamat Datang di WiFi Yukari</h1>
+            <p>Nikmati akses internet sambil menikmati kopi. Silakan login menggunakan akun hotspot Anda.</p>
+
+            <div class="art-card">
+                <div class="art-thumb">
+                    <img src="img/origin.webp" alt="Artwork thumbnail" />
+                </div>
+                <div class="art-meta">
+                    <div class="title">Cheval Grand - Uma Musumee</div>
+                    <div>Creator: <strong>Zulmi Cahya Pratama</strong></div>
+                    <div class="meta-small">Tanggal dibuat: 1 November 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="card" role="form" aria-label="Form login hotspot">
+            <div class="brand">
+                <div>
+                    <h2>Yukari Hotspot</h2>
+                    <p>Free WiFi • Akses terbatas</p>
+                </div>
+            </div>
+
+            <form method="post" action="/login" id="hotspotForm">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" required autocomplete="username" inputmode="text" />
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required autocomplete="current-password"
+                    inputmode="text" />
+
+                <div class="actions">
+                    <button type="submit">Login</button>
+                    <button type="button" class="secondary" onclick="location.reload()">Refresh</button>
+                </div>
+                <div class="small">Dengan login, Anda setuju dengan Syarat dan Ketentuan kami</div>
+            </form>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
